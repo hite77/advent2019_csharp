@@ -31,5 +31,18 @@ namespace day1.Tests
             mass.round(14);
             Assert.AreEqual(658, mass.round(1969));
         }
+        [TestMethod]
+        public void CalculateMassWithFuel()
+        {
+            var mass = new Mass();
+            Assert.AreEqual(2, mass.round_with_fuel(12));
+        }
+        [TestMethod]
+        public void CalculateMassWithFuelWithFuelAdded()
+        {
+            var mass = new Mass();
+            Assert.AreEqual(966, mass.round_with_fuel(1969));
+            Assert.AreEqual(50346, mass.round_with_fuel(100756));
+        }
     }
 }
