@@ -7,38 +7,18 @@ https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest
 
 Create top folder
 ```dotnet new sln```
-Create day1 folder
-cd day1
-dotnet new classlib
-rename Class1.cs to Day1.cs
-Update contents of Day1.cs
-cd ..
-dotnet sln add day1/day1.csproj
-mkdir day1.Tests
-cd day1.Tests
-dotnet new mstest
-dotnet add reference ../day1/day1.csproj
-go to top level folder and
-dotnet sln add .\day1.Tests\day1.Tests.csproj
 
-  101  rm -rf day1
-  102  ls
-  103  mkdir day1
-  104  dotnet new sln
-  105  ls
-  106  pwd
-  107  pwd
-  108  cd day1
-  109  dotnet new classlib
-  110  ls
-  111  mv Class1.cs Day1.cs
-  112  vim Day1.cs
-  113  cd ..
-  114  dotnet sln add day1/day1.csproj
-  115  mkdir day1.Tests
-  116  cd day1.Tests
-  117  dotnet new mstest
-  118  dotnet add reference ../day1/day1.csproj
-  119  cd ..
-  120  ls
-  121  dotnet sln add day1.Tests/day1.Tests.csproj
+   45  mkdir day2
+   46  cd day2
+   47  dotnet new sln
+   48  dotnet new classlib
+   49  mv Class1.cs Day2.cs
+   50  vim Day2.cs
+   51  cd ..
+   52  dotnet sln add day2/day2.csproj
+   53  mkdir day2.Tests
+   54  cd day2.Tests
+   55  dotnet new mstest
+   56  dotnet add reference ../day2/day2.csproj
+   57  cd ..
+   58  dotnet sln add day2.Tests/day2.Tests.csproj
