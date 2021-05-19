@@ -44,5 +44,10 @@ namespace day1.Tests
             Assert.AreEqual(966, mass.round_with_fuel(1969));
             Assert.AreEqual(50346, mass.round_with_fuel(100756));
         }
+        //[TestMethod]
+        //public void TestingMain()
+        //{
+        //    Mass.Main();
+        //}
     }
 }

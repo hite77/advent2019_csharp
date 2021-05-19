@@ -6,7 +6,7 @@ namespace day1
     {
         private int sum = 0;
     
-        static void Main()
+        static public void Main()
         {
             Mass mass = new Mass();
 
