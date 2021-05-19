@@ -32,5 +32,13 @@ namespace day2.Tests
 
             Assert.AreEqual(3500, intcode.process());
         }
+        [TestMethod]
+        public void TestSwallowsErrors()
+        {
+            int[] input = { 1, 42, 10, 3, 2, 3, 42, 0, 1, 0, 1, 42, 99, 30, 40, 50 };
+            var intcode = new Intcode(input);
+
+            Assert.AreEqual(1, intcode.process());
+        }
     }
 }
